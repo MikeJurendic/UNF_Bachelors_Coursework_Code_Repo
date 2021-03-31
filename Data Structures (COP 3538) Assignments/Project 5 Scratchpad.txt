@@ -1,0 +1,49 @@
+	String line = null;
+	Scanner scanner = null;
+	String stateName;
+	int statePopulation;
+        int n_lines = 0;
+        int records = 0;
+        String file="";
+        Scanner input = new Scanner(System.in);
+
+        // Will create a new Hash Table Object here (Will call it HashData) 
+        
+        
+        System.out.print("Enter file name to read : ");
+        file = input.nextLine();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file)); //open the csv file
+  
+            while ((line = reader.readLine()) != null) {
+                // Ignore the first line containing headers
+            	String TempState = null;
+            	int TempPopulation = 0;
+            	
+                if (n_lines != 0) {
+                    scanner = new Scanner(line);
+                    scanner.useDelimiter(",");
+                    records++;
+                    TempState = scanner.next();
+                    scanner.next();
+                    scanner.next();
+                    TempPopulation = Integer.parseInt(scanner.next());
+               	    // Will place the insert function here
+                    }
+            	
+                n_lines++;
+                }
+
+            
+            System.out.println("There were " + records + " state records put in the Hash Table.");
+
+
+	    // Make use of functions to be create here 
+
+
+
+            } catch (FileNotFoundException e) {
+            	e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
