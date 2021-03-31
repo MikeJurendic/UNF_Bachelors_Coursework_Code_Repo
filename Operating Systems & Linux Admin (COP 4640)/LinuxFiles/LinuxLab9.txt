@@ -1,0 +1,58 @@
+Script started on 2019-10-29 17:17:57-0400
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ls
+ [0m[01;32mLinuxLab6.sh[0m     [01;32mLinux_Lab8.sh[0m   [01;34mmodule8_old[0m         [01;31m'n01181088Backup(10-25-2019).tgz'[0m
+ [01;32mLinux_Lab7.sh[0m    LinuxLab9.txt   [01;31mmodule8_tarred.tgz[0m  [01;31m'n01181088Backup(10-27-2019).tgz'[0m
+ [01;32mLinux_Lab7.txt[0m   [01;34mmodule8[0m         [01;34mmodule9files[0m
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cd module9files
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ ls
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp [username]@139.62.210.170:[remote folder]/[remote filenname] .[C[1P .[1P .[1P .[1P .[1P .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C .[K[A]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C . [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P .
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P .[1P.[1P .[1P .[1P .[1P .[1P .[1P .[1P .[K]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp [username]@139.62.210.170:[remote folder]/ .[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@o[1@p[1@4[1@6[1@4[1@0[1@u[1@s[1@e[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@d[1@o[1@w[1@n[1@l[1@o[1@a[1@d[Cp .r .o .g .r .a .m .1 .
+cop4640user@139.62.210.170's password: 
+program1                                                                                                                                    0%    0     0.0KB/s   --:-- ETAprogram1                                                                                                                                  100% 9073    10.6MB/s   00:00    
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp cop4640user@139.62.210.170:download/program1 .. .m .d .5 .
+cop4640user@139.62.210.170's password: 
+program1.md5                                                                                                                                0%    0     0.0KB/s   --:-- ETAprogram1.md5                                                                                                                              100%   92   196.3KB/s   00:00    
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp cop4640user@139.62.210.170:download/program1.md5 .[C[C[1P .[1P .[1P .[1P .[1P .2 .
+cop4640user@139.62.210.170's password: 
+program2                                                                                                                                    0%    0     0.0KB/s   --:-- ETAprogram2                                                                                                                                  100% 8656    10.7MB/s   00:00    
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp cop4640user@139.62.210.170:download/program2 .. .m .d .5 .
+cop4640user@139.62.210.170's password: 
+program2.md5                                                                                                                                0%    0     0.0KB/s   --:-- ETAprogram2.md5                                                                                                                              100%   92   185.7KB/s   00:00    
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp cop4640user@139.62.210.170:download/program2.md5 .[1P[1@3[C[C[C[C[1P .[1P .[1P .[1P .
+cop4640user@139.62.210.170's password: 
+program3                                                                                                                                    0%    0     0.0KB/s   --:-- ETAprogram3                                                                                                                                  100%   13KB  16.8MB/s   00:00    
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ scp cop4640user@139.62.210.170:download/program3 .. .m .d .5 .
+cop4640user@139.62.210.170's password: 
+program3.md5                                                                                                                                0%    0     0.0KB/s   --:-- ETAprogram3.md5                                                                                                                              100%   92   167.4KB/s   00:00    
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ ls
+[0m[01;32mprogram1[0m  [01;32mprogram1.md5[0m  [01;32mprogram2[0m  [01;32mprogram2.md5[0m  [01;32mprogram3[0m  [01;32mprogram3.md5[0m
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ clear
+[3J[H[2J]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ c[Kls
+[0m[01;32mprogram1[0m  [01;32mprogram1.md5[0m  [01;32mprogram2[0m  [01;32mprogram2.md5[0m  [01;32mprogram3[0m  [01;32mprogram3.md5[0m
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ cat program1.md5
+MD5 Checksum for program1
+--------------------------------
+b678243bb75537ec7aec8b38e04daab0
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ catprogram[K[K[K[K[K[K[K program2.md5
+MD5 Checksum for program2
+--------------------------------
+eae8b0665f2040d4c8724df332d1107e
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ cat program2.md5[1P.md53.md5
+MD5 Checksum for program3
+--------------------------------
+3d29feb1c3e5344417d2736cc7e3051a
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ checksu [K[K[K[K[K[K[K[Kmd5sum program1
+d398f4cccd7a617b80869ba4944145ae  program1
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ md5sum program1[K2
+eae8b0665f2040d4c8724df332d1107e  program2
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ md5sum program2[K3
+05ca35a64e1987b827013248fac9d9d6  program3
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ ./r[Kprogram2
+[3J[H[2JCongratulations! You Choose Wisely.
+
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ ls
+[0m[01;32mprogram1[0m  [01;32mprogram1.md5[0m  [01;32mprogram2[0m  [01;32mprogram2.md5[0m  [01;32mprogram3[0m  [01;32mprogram3.md5[0m
+]0;n01181088@cisvm-cop4640-9: ~/module9filesn01181088@cisvm-cop4640-9:~/module9files$ exit
+exit
+
+Script done on 2019-10-29 17:24:17-0400

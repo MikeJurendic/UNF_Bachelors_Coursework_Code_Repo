@@ -1,0 +1,212 @@
+Script started on 2019-09-12 17:06:36-0400
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ uptime
+ 17:06:47 up 36 days,  7:27,  3 users,  load average: 0.00, 0.00, 0.00
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ pwd
+/home/n01181088
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ who
+n01147052 pts/0        2019-09-12 16:15 (10.0.100.12)
+n01147052 pts/1        2019-09-12 17:06 (10.0.100.10)
+n01181088 pts/2        2019-09-12 16:51 (10.253.72.141)
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ exit
+exit
+
+Script done on 2019-09-12 17:07:34-0400
+Script started on 2019-09-12 17:26:59-0400
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ hostnamectl
+   Static hostname: cisvm-cop4640-9
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: 3e7d3a29144faba280d16a3757a3534c
+           Boot ID: 22befeb6df3547209a5cad22492682c0
+    Virtualization: vmware
+  Operating System: Ubuntu 18.04.3 LTS
+            Kernel: Linux 4.15.0-55-generic
+      Architecture: x86-64
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ps
+  PID TTY          TIME CMD
+  395 pts/3    00:00:00 bash
+  422 pts/3    00:00:00 ps
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ps -u n01181088
+  PID TTY          TIME CMD
+  394 pts/2    00:00:00 script
+  395 pts/3    00:00:00 bash
+  437 pts/3    00:00:00 ps
+32529 ?        00:00:00 systemd
+32530 ?        00:00:00 (sd-pam)
+32607 ?        00:00:00 sshd
+32608 ?        00:00:00 sftp-server
+32609 pts/2    00:00:00 bash
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ c[Kexit
+exit
+
+Script done on 2019-09-12 17:32:13-0400
+Script started on 2019-09-14 11:14:01-0400
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ if [K[K[Kifconfig-[K -a
+ens160: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 139.62.210.169  netmask 255.255.255.0  broadcast 139.62.210.255
+        inet6 fe80::5054:ff:fe5b:562a  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:5b:56:2a  txqueuelen 1000  (Ethernet)
+        RX packets 3013873  bytes 609880456 (609.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 450405  bytes 177795092 (177.7 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 161691  bytes 101637769 (101.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 161691  bytes 101637769 (101.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ pwd
+/home/n01181088
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cd ..[K[K[K[K[Kexit
+exit
+
+Script done on 2019-09-14 11:14:54-0400
+Script started on 2019-09-14 11:17:02-0400
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ mkdir al[K[Kab[K[Klab2
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ touch lab2/myPets
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cat [K[K[K[Kecho [K]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ echo [K]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ echo Dog:Morris ?[K>[K]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ echo Dog:Morris >[K]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ echo Dog:Morris >> lab2/myPets
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cat myPets
+cat: myPets: No such file or directory
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cat myPetslmyPetsamyPetsbmyPets2myPets/myPets
+Dog:Morris
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ sed s/Dog/[K[K[K[K[K[K[K
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode.
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <http://www.gnu.org/software/sed/>.
+General help using GNU software: <http://www.gnu.org/gethelp/>.
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ sed 's/Dog/Cat/g' lab2/Li[K[KmyPets
+Cat:Morris
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cat lab2/myPets
+Dog:Morris
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ cat lab2/myPets[14@sed 's/Dog/Cat/g'[C[C[C[C[C[C[C[C[C[C[C[C[1@w
+sed: couldn't open file : No such file or directory
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ls
+[0m[01;34mlab2[0m  LinuxLab2.log  LinuxLab3
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ls lab2
+myPets
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ls lab2[Ksed 's/Dog/Cat/gw' lab2/myPets[1P
+Cat:Morris
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ sed 's/Dog/Cat/g' lab2/myPets[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kman sed
+[?1049h[22;0;0t[?1h=SED(1)                             User Commands                            SED(1)[m
+[m
+[1mNAME[0m[m
+       sed - stream editor for filtering and transforming text[m
+[m
+[1mSYNOPSIS[0m[m
+       [1msed[0m [[4mOPTION[24m]... [4m{script-only-if-no-other-script}[24m [[4minput-file[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       [4mSed[24m  is  a  stream  editor.   A stream editor is used to perform basic text[m
+       transformations on an input stream (a  file  or  input  from  a  pipeline).[m
+       While  in some ways similar to an editor which permits scripted edits (such[m
+       as [4med[24m), [4msed[24m works by making only one pass over the input(s), and is  conse‐[m
+       quently  more efficient.  But it is [4msed[24m's ability to filter text in a pipe‐[m
+       line which particularly distinguishes it from other types of editors.[m
+[m
+       [1m-n[0m, [1m--quiet[0m, [1m--silent[0m[m
+[m
+              suppress automatic printing of pattern space[m
+[m
+       [1m-e[0m script, [1m--expression[0m=[4mscript[24m[m
+[m
+              add the script to the commands to be executed[m
+[m
+       [1m-f[0m script-file, [1m--file[0m=[4mscript-file[24m[m
+[m
+              add the contents of script-file to the commands to be executed[m
+[m
+       [1m--follow-symlinks[0m[m
+[m
+              follow symlinks when processing in place[m
+[m
+       [1m-i[SUFFIX][0m, [1m--in-place[0m[=[4mSUFFIX[24m][m
+[m
+              edit files in place (makes backup if SUFFIX supplied)[m
+[m
+       [1m-l[0m N, [1m--line-length[0m=[4mN[24m[m
+[m
+              specify the desired line-wrap length for the `l' command[m
+[m
+       [1m--posix[0m[m
+[m
+[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ man sedsed 's/Dog/Cat/g' lab2/myPets[C[1@w[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+sed: -e expression #1, char 12: unterminated `s' command
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ sed 'sw/Dog/Cat/g' lab2/myPets[1P
+sed: couldn't open file /Dog/Cat/g: No such file or directory
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ sed 'w/Dog/Cat/g' lab2/myPets[1P[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksed 's/Dog/Cat/g' lab2/myPets[1@-[1@i[1@ 
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ca [Kt lab2/M[Kmyp[KPets
+Cat:Morris
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ exit
+exit
+
+Script done on 2019-09-14 11:32:53-0400
+Script started on 2019-09-14 18:38:14-0400
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ls /bin/* -sort | awk '{print $6;}' | uniq --skip-fields=7 | uniq -c | aawk '{print $2":",$1}'
+Apr: 1
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ ls /bin/* -sort | awk '{print $6;}' | uniq --skip-fields=7 | uniq -c | aawk '{print $2":",$1}'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | aw[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk [1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{p[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{pr[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{pri[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{prin[1P[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print[1P $2":",$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print [1P$2":",$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $[1P2":",$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2[1P":",$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2"[1P:",$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2":[1P",$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| uniq -c | awk '{print $2":"[1P,$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2":",[1P$1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2":",$[1P1}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2":",$1[1P}'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2":",$1}[1P'[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| uniq -c | awk '{print $2":",$1}'[K[A]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | uniq -c | awk '{print $2":",$1}' [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Apr: 2
+Aug: 6
+Jan: 1
+Apr: 17
+Jul: 3
+Nov: 6
+Dec: 5
+Jan: 45
+Feb: 2
+Mar: 13
+May: 3
+Oct: 8
+Nov: 2
+Dec: 1
+Jan: 1
+Mar: 20
+Apr: 2
+Jun: 5
+Jul: 12
+Aug: 1
+Sep: 15
+]0;n01181088@cisvm-cop4640-9: ~n01181088@cisvm-cop4640-9:~$ exit
+exit
+
+Script done on 2019-09-14 18:39:01-0400

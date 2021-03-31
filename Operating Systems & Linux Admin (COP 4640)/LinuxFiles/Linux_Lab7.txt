@@ -1,0 +1,232 @@
+# Variable 'Intializations'
+
+QUIET_BOOL=false;
+HELPorVERSIONused=false;
+DisplayinCel=false;
+windchillTempMeasurement="F";
+InputinCel=false;
+outsideTempMeasurement="F";
+outputToFile=false;
+fileOutput="";
+airTemp="";
+Velocity=""; 
+
+# Function declarations
+
+function windchillCalc()
+{
+	windchill=""
+	velocityExp=""
+
+	if [ "$airTemp" == "" ] || [ "$Velocity" == "" ];	
+	then
+		echo "Missing arguments for windchill: See exit code"
+		exit 3
+	fi 
+	
+	if [ "$InputinCel" == true ];
+	then
+		airTemp=$(expr "scale=3; ($airTemp*9/5+32)"|bc)
+
+	fi 
+	
+	if [ "$airTemp" -lt -58 -o "$airTemp" -gt 41 ];
+	then
+		echo "The air temp is outside the allowed range: See exit code"
+		exit 4 
+	fi
+
+	if [ "$Velocity" -lt 2 -o "$Velocity" -gt 50 ];
+	then
+		echo "The velocity is outside the allowed range: See exit code"
+		exit 4
+	fi
+
+	velocityExp=$(expr  "scale=3; e(0.16 * l($Velocity))"|bc -l) 
+	 
+	windchill=$(expr  "scale=3; 35.74+(.6215*$airTemp)-(35.75*$velocityExp)+(.4275*$airTemp*$velocityExp)"|bc )
+
+	if [ "$DisplayinCel" == true ];
+	then
+		windchill=$(expr "scale=3; (($windchill-32)*5)/9"|bc)
+	fi
+
+		
+	if [ "$outputToFile" == true ];
+	then
+		sendToFile   # Output is dealt with in a seperate function if file is used
+	else 
+
+	# If --file is not used, here is the logic for displaying to the screen as is
+	
+	if [ "$QUIET_BOOL" == true ]; # Quiet case to display to screen
+	then
+	echo $windchill 
+	else	 		      # If Quiet is not used		      
+		
+			echo "Outside Air Temperature ($outsideTempMeasurement): $airTemp" 
+			echo "Wind Speed: $Velocity"
+			echo "Wind Chill: ($windchillTempMeasurement): $windchill" 
+		fi
+	fi	
+
+}
+
+function sendToFile()
+{
+	if [ "$QUIET_BOOL" == true ];
+	then
+		echo $windchill>>$fileOutput
+	fi
+}
+
+
+function help_display()
+{
+echo "
+
+	     Usage: windchill --airtemp=<temp> --velocity=<speed> [-c | --cout] [--cin] [--file=<filename>] [-h | --help] [-q | --quiet] [-v | --version]
+
+             Arguments
+		
+	     --airtemp=<temp>    The outside air temperature (in Fahrenheit by default)
+	     --velocity=<speed>  The wind speed
+	     -c | --cout         Display the wind-chill value in Celsius rather than Fahrenheit (Fahrenheit output is default) 
+	     --cin               The --airtemp value is in Celsius rather than Fahrenheit
+	     --file=<filename>   Write all output to the specified file rather than the command line
+	     -h | --help         Display this message
+	     -q | --quiet        Do not display anything except the answer in the output
+	     -v | --version      Display the version information
+	     
+	     "
+
+     }
+
+function version_display()
+{
+echo "
+      
+      Version: 1.0
+      Author: Mike Jurendic 
+      Date: October 19, 2019 
+      Copyright (C) 2019 by Some random company
+
+     "
+
+}
+
+# End of Functions 
+
+PARSED_OPTIONS=$(getopt -n "$0" -o hvqc --long "help,version,quiet,cout,cin,velocity:,file:,airtemp:" -- "$@")
+
+if [ $? -ne 0 ];
+then 
+	"Unknown Argument(s)"
+	exit 1
+fi 
+
+
+eval set -- "$PARSED_OPTIONS"
+
+#Loop to sense the quiet function
+                         
+for arg in "$@"                    
+do
+	case "$arg" in 
+
+		-q | --quiet)
+			QUIET_BOOL=true;
+		break;;
+
+	esac 
+done
+
+#Loop to sense the help or version functions 
+
+for arg in "$@"
+do
+	case "$arg" in
+		
+		-h | --help)
+			HELPorVERSIONused=true;
+			help_display
+		break;;
+
+		-v | --version)
+			HELPorVERSIONused=true;
+			version_display;
+		break;;
+
+	esac
+done
+
+#Loop for reading the optional functions like dispaying in celcius
+
+for arg in "$@"
+do 
+	case "$arg" in
+
+		-c | --cout)
+			DisplayinCel=true;
+			windchillTempMeasurement="C";
+		break;;
+
+		--cin)
+			InputinCel=true;
+			outsideTempMeasurement="C";
+		break;;
+
+		--file)
+			outputToFile=true;
+		   	if [ -n "$2" ];
+	                then
+				if [ $2 = "" ]; # Error handling for no file to export to
+				then
+				echo "No file was specified with --file"
+				exit 3
+				fi 
+			fileOutput=$2
+			fi  
+	esac
+done
+
+for arg in "$@"
+do
+	case "$arg" in
+		
+		--airtemp)
+			if [ "$HELPorVERSIONused" == true ];
+			then
+			 	echo "Help or version cannot be used with other functions. See exit code" 
+			exit 2	
+			fi
+
+			if [ -n "$2" ]; 
+			then	
+			airTemp=$2
+		        fi
+		shift 2;;
+		
+		--velocity)
+                        if [ "$HELPorVERSIONused" == true ];
+			then
+				echo "Help or version cannot be used with other functions. See exit code" 
+			exit 2
+			fi
+
+			if [ -n "$2" ];
+			then
+			Velocity=$2;								          
+			fi
+		shift 2;;
+
+	esac
+done
+
+
+
+if [ "$HELPorVERSIONused" == false ];
+then 
+	echo "Wind Chill Calculator"	
+	windchillCalc  # Begin windchill calculation - See windchillCalc() 
+fi 

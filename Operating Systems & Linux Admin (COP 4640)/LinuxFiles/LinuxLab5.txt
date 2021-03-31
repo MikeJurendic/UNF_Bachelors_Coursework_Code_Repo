@@ -1,0 +1,61 @@
+
+while [ true ]; do
+	echo -n "Mike>"
+	read command arg1 arg2
+
+	case ${command^^} in 
+
+		CHDIR)
+			cd $arg1 
+		;; 
+
+		CLS) 
+			clear
+		;;
+
+		COPY)
+			cp $arg1 $arg2 
+		;;
+
+		CREATEDIR)
+			mkdir $arg1
+		;;
+
+		CREATEFILE)
+			touch $arg1
+		;; 
+
+		DELETE)
+			rm $arg1 
+		;;
+
+		DIR)
+			ls $arg1 $arg2 
+		;;
+
+		MOVE)
+			mv $arg1 $arg2 
+		;; 
+
+		PRINT)
+			echo "$arg1"
+		;; 
+
+		QUIT)
+			exit 0
+		;; 	
+
+		RENAME)
+			mv $arg1 $arg2
+		;;
+		
+		TYPE)
+			cat $arg1 
+		;; 	
+
+		*)
+			echo "Command Not Found!"
+		;; 
+	esac 
+
+done 
