@@ -1,0 +1,13 @@
+1. We observe the differences in the code of unsafe_home.php and safe_home.php 
+The code in safe_home.php has the prepared statement that should block off the attack.
+
+2. The code in unsafe_home.php does not contain the prepared statement, and is what allows us to perform the simple exploit 
+
+3. We used the terminal and used the sudo command with the gedit command to be able to alter the .php file loaded by tbe .html file
+
+4. We right clicked on index.html in var/www/SQLInjection and used open with gedit to update the code to take safe_home.php instead
+of unsafe_home.php
+
+5. We prepared the exploit statement from previous tasks.
+
+6. As expected, the exploit no longer works.  

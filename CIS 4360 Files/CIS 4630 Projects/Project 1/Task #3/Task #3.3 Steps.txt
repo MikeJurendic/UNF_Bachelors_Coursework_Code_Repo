@@ -1,0 +1,10 @@
+1. We typed in:
+Boby' # 
+to gain access to his profile.
+
+2. We edited his profile password from there.
+
+3. updated boby's password to whocareswhat
+
+4. Successfully logged in with the password whocareswhat
+

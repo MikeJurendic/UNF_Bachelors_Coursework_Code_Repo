@@ -1,0 +1,6 @@
+1. We typed: whocareswhat', Salary=120000 # 
+into the new password part of the edit profile page.
+
+But it didn't work. So we typed it into Phone Number to change the salary then just made the phone number blank afterwards. 
+
+2. We succesfully increased Alice's Salary.     

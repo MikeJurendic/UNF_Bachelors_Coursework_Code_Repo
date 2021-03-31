@@ -1,0 +1,5 @@
+1. We attempted to use the command: admin'; SELECT TABLE credential DROP COLUMN birth; #
+to trick the SQL code into deleting the birth column.
+
+2. As expeceted, the multiple quieries code trick no longer works. We only 
+recieved a syntax error screen. 

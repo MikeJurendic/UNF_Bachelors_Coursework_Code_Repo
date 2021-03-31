@@ -1,0 +1,14 @@
+1. We attempted to use the command line (terminal) command 'curl' and typed in after: 'www.seedlabsqlinjection.com/index.php?username=admin%27%20OR%201=1%20%23&Password='; but this 
+showed us that a .php instance of the index didn't exist. 
+
+2. We tried getting creative and did 'index.html' (curl 'www.seedlabsqlinjection.com/index.html?username=admin%27%20OR%201=1%20%23&Password=';) 
+instead and noticed the clause <form action="unsafe_home.php" method="get"> 
+
+3. We assumed this meant index.html gets its actual data from this .php file 
+so we typed in: curl 'www.seedlabsqlinjection.com/unsafe_home.php?username=admin%27%20OR%201=1%20%23&Password='; 
+We only managed to recovered some useful information from Alice's profile only.
+
+4. We then noticed the OR 1=1 part of the encoding clause could be removed (%20OR%201=1, leaving just admin%27%20%23&Password=). We got this idea from Task 2.1 as typing admin' # was 
+sufficient enough to crack the SQL GET Function's code. So we decided to make the command line approach similar by finally typing the following: 
+curl 'www.seedlabsqlinjection.com/unsafe_home.php?username=admin%27%20%23&Password=';
+We then got some better results which had all users information! 

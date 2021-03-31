@@ -1,0 +1,8 @@
+1. Repeated the similar process for Alice. We typed: Boby' #
+into the username field to gain access to Boby's profile 
+
+2. Then typed 
+whocareswhat', Salary=1 # 
+into the Phone number field, again making sure to clean up the phone number. 
+
+3. We sucessfully updated Boby's Salary to 1 
